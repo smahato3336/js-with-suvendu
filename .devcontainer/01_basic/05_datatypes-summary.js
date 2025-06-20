@@ -50,7 +50,7 @@ const address = {
 //Functions: -
 
 const myFunction = function() {
-    console.log("Hello World");
+    //console.log("Hello World");
 }
 
 // console.log(typeof bigNumber);
@@ -63,9 +63,31 @@ const datatypes = {
     Number : "Number",
     String : "String",
 }
-console.log(datatypes);
-console.log(typeof myFunction); //Datatype of function is function. and datatype of symbol is symbol.
+// console.log(datatypes);
+// console.log(typeof myFunction); //Datatype of function is function. and datatype of symbol is symbol.
+
+//*************************************************************
+// Stack (Primitive), Heap (Non-Primitive)
+
+let myYoutubename = "suvendumahato"
+
+let anothername = myYoutubename
+anothername = "rumamahato"
+
+// console.log(myYoutubename);
+// console.log(anothername);
 
 
 
 
+let userOne = {
+    email: "suvendu@google.com",
+    upi: "user@ybl"
+}
+ let userTwo = userOne
+
+ userTwo.email = "rumamahato@google.com"
+
+ console.log(userOne.email);
+ console.log(userTwo.email);
+ 
