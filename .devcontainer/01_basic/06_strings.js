@@ -36,4 +36,31 @@ const url = "https://suvendumahato.com/suvendu%20mahat0o"
 // console.log(url.includes('ruma')); //Is 'ruma' keyword available in the url? false.
 
 const newName = "ruma-suvendu-sanvika"
-console.log(newName.split('-')); // just split newName bases on '-' dash.
+//console.log(newName.split('-')); // just split newName bases on '-' dash.
+
+
+
+//******************* String Method : Prototype ********************//
+//Anchor : The code below creates an HTML string and then replaces the document's body with it:
+const introduction = "Hello, World"
+//console.log(introduction.anchor('Hello'));
+
+//at : The at() method of Array instances takes an integer value and returns the item at that index, 
+// allowing for positive and negative integers. Negative integers count back from the last item in the array.
+
+const array1 = [5, 12, 55, 123, 130, 255];
+let index = 2;
+//console.log(`An index of ${index} returns ${array1.at(index)}`);
+
+index = -2;
+//console.log(`An index of ${index} returns ${array1.at(index)}`);
+
+//big: The code below creates an HTML string and then replaces the document's body with it:
+
+let worldName = "Hello World"
+// console.log(worldName.big('Hello'));
+// console.log(typeof worldName);
+
+//blink: the <blink> element itself is removed from modern browsers, and blinking text is frowned upon by several accessibility standards. 
+console.log(worldName.blink('Hello'));
+
