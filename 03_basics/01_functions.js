@@ -48,3 +48,64 @@ const permanentAddress = "Vill: Dengurpara, PO: Saguna, PS: Kalyani, Dist: Nadia
 //console.log("Ruma's permanent address is " + permanentAddress);
 //console.table("Ruma's permanent address is " + permanentAddress);
 
+/*
+// **********Logged In User Message*************
+
+function loginUserMessage(username = "sam") {
+    if(!username) { //or if(username === undefined) same 
+        console.log("Please enger a username");
+        return
+    }
+    return `${username} justed logged in`
+}
+//console.log(loginUserMessage());
+//console.log(loginUserMessage("Suvendu Mahatoo"));
+
+*/
+/*
+//************Shoppint cart****************
+
+function calculateCartPrice(val1, val2, ...num1) {
+    return num1
+}
+//console.log(calculateCartPrice(200, 300, 500, 600));
+*/
+
+/*
+const user = {
+    itemname: "coppermug",
+    price: 699
+}
+
+function itemDetails(anyobject){
+    console.log(`itemname is ${anyobject.itemname} and price is ${anyobject.price}`);   
+}
+//itemDetails(user)
+//********pass direct object************
+itemDetails({
+    itemname: "Water Bottle",
+    price: 199
+})
+
+itemDetails({
+    itemname: "Bed Sheet",
+    price: 399
+})
+
+itemDetails({
+    itemname: "Mens T-shirt",
+    price: 599
+})
+
+*/
+
+//************Array in Function*************
+const myNewArray = [200, 400, 600, 800];
+
+function returnSecondValue(getarray) {
+    return getarray[1]
+}
+//console.log(returnSecondValue(myNewArray));
+
+//pass direct array
+console.log(returnSecondValue([200, 800, 600, 700]));
