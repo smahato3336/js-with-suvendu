@@ -103,9 +103,9 @@ console.log(menuLength);
     
     const cityBucketList = ["Kyoto", "London", "Cape Town", "Vancouver"];
     
-    const isLondonInList = cityBucketList.includes("London");
+    const isLondonInList = cityBucketList.includes("London"); //* Determines whether an array includes a certain element, returning true or false as appropriate.
     console.log(isLondonInList);
     
-*/
+    */
 
  
