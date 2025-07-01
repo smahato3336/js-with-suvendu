@@ -71,6 +71,41 @@
     console.log(topCities);
 */
 
+/*
+08. You have two array: 'europeanCities' containing "Paris" and "Rome", and 'asianCities' containing
+    "Tokyo" and "Bankok". Merge these two arrays into a new array named 'worldCities'.
+    
+    const europeanCities = ["Paris", "Rome"];
+    
+    const asianCities = ["Tokyo", "Bankok"];
+    
+    const worldCities = europeanCities.concat(asianCities);
+    
+    console.log(worldCities);
+    
+*/
 
+/*
+09. You have an array named 'teaMenu' containing "masala chai", "oolong tea", "green tea", and "earl grey",
+    Find the length of the array and store it in a variable named 'menuLength'.
+    
+    const teaMenu = ["masala chai", "oolong tea", "green tea", "earl grey"];
+    
+    const menuLength = teaMenu.length;
+    
+console.log(menuLength);
+
+*/
+
+/*
+10. You have an array named 'cityBucketList' containing "Kyoto", "London", "Cape Town", and "Vancouver".
+    Check if "London" is in the array and store the result in a variable named 'isLondonInList'.
+    
+    const cityBucketList = ["Kyoto", "London", "Cape Town", "Vancouver"];
+    
+    const isLondonInList = cityBucketList.includes("London");
+    console.log(isLondonInList);
+    
+*/
 
  
