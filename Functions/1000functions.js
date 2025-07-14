@@ -88,3 +88,99 @@ check_Palindrome('baba');
 check_Palindrome('nursesrun');
 check_Palindrome('fox');
 */
+
+/*
+04. Write a JavaScript function that returns a string that has letters in alphabetical
+    order. Example string: 'webmaster', Expected output: 'abeemrstw'.
+
+    function sortString (a2z) {
+        return a2z.split('') .sort() .join(''); 
+}
+console.log(sortString("webmaster"));
+console.log(sortString("elephant"));
+
+//Sort Z to A words in decending order..
+function sortZtoAwords (arr) {
+    return arr.sort(function (a, b){
+        return b.localeCompare(a); //Compares b to a for decending order
+    });
+}
+const words = ['Apple', 'Banana', 'Orange', 'Grapes'];
+const sortedWords = sortZtoAwords(words);
+console.log(sortedWords);
+
+//Sort A to Z words in assending order..
+function sortAtoZwords (str) {
+    return str.sort(function(a, b) {
+        return a.localeCompare(b);
+    });
+}
+const another_words = ["Elephant", "Tiger", "Dog", "Apple", "Lion"];
+const assendingWords = sortAtoZwords(another_words)
+console.log(assendingWords);
+
+//Sort numbers in decending order...
+function sortNumbers (num1) {
+    return num1.sort(function (a, b) {
+        return b - a;
+    });
+}
+const numbers = [10, 5, 6, 2, 9, 4];
+const decendingNumbers = sortNumbers(numbers);
+console.log(decendingNumbers);
+
+//Sort numbers in assending order..
+function sort_another_number (num2) {
+    return num2.sort(function(a, b) {
+        return a - b;
+    });
+}
+const number2 = [10, 5, 1, 7, 2, 8];
+const assendingNumber = sort_another_number(number2);
+console.log(assendingNumber);
+
+*/
+
+/*
+05. Capitalize First Letter of Each word
+    Write a JavaScript function that accetps a string a parameter and converts
+    the first letter of each word into upper case.
+    function upperCase (str) {
+        //Split the input string into an array of words
+        let array1 = str.split(' ');
+        let newarray1 = [];
+        
+    //Initialize an empty array to store the modified words
+    for(let x = 0; x < array1.length; x++) {
+        //push the word with its first letter capitalized and the rest of the letters unchanged
+        newarray1.push(array1[x].charAt(0).toUpperCase() + array1[x].slice(1));
+    }
+    //join the modified words into a single string, separated by space.
+    return newarray1.join(' ');
+} 
+console.log(upperCase('the quick brown fox jumps over the lazy dog.'));
+
+*/
+
+/*
+06. Find Longest Word
+    Write a JavaScript function that accepts a string as parameter and finds 
+    the longest word within the string.
+    Example string: "Web Development Course"
+    Expected Output: "Development"
+    */
+function find_longest_word(str) {
+
+    let array1 = str.match(/\w[a-z]{0,}/gi);
+
+    let result = array1[0];
+
+    for(let x = 1; x < array1.length; x++){
+        
+        if (result.length < array1[x].length){
+            result = array1[x];
+        }
+    }
+    return result;
+}
+console.log(find_longest_word("Web Development Course"));
