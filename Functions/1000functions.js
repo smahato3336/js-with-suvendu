@@ -168,9 +168,8 @@ console.log(upperCase('the quick brown fox jumps over the lazy dog.'));
     the longest word within the string.
     Example string: "Web Development Course"
     Expected Output: "Development"
-    */
-function find_longest_word(str) {
-
+    function find_longest_word(str) {
+        
     let array1 = str.match(/\w[a-z]{0,}/gi);
 
     let result = array1[0];
@@ -184,3 +183,58 @@ function find_longest_word(str) {
     return result;
 }
 console.log(find_longest_word("Web Development Course"));
+*/
+
+/*
+07. Write a JavaScript function that accetps a string as a parameter and counts the number of 
+    vowels within the string.
+Note: As the letter 'y' can be regarded as both a vowel and a consonant, we do not
+    count 'y' as vowel here.
+    //Define a function named vowel_count that takes a string parameter (str1)
+    function vowel_count(str1){
+        // Define a string countaining all the vowels in booth lowercase and uppercase
+    let vowel_list = 'aeiouAEIOU';
+    // Initialize a variable vcount to count the number of vowels
+    let vcount = 0;
+    //Iterate through each character in the input string
+    for (let x = 0; x < str1.length; x++){
+        //Check if the current character is a vowel by searching for it in the vowel_list
+        if (vowel_list.indexOf(str1[x]) !== -1 ) {
+            // If the character is a vowel, increment the vowel count
+
+            vcount += 1;
+        }
+    }
+    // Return the total count of vowels in the input string
+    return vcount;
+}
+
+console.log(vowel_count("The Quick Brown Fox Jumps Over The Lazy Dog"));
+
+*/
+
+/*
+08. Check Prime Using Recursion
+    Write a JavaScript function that accepts a number as parameter and
+    checks whether it is prime or not using recursion.
+Note: A prime number (or a prime) is a natural number greater than 1 that has
+    no positive divisors other than 1 and itself.
+    function test_prime(n){
+        
+    if (n === 1) {
+        return false;
+    } else if (n === 2){
+        return true;
+    } else {
+        
+        for(let x = 2; x < n; x++){
+            if (n % x === 0){
+                return false;
+            }
+        }
+        return true;
+    }
+}
+console.log(test_prime(47));
+
+*/
