@@ -238,3 +238,32 @@ Note: A prime number (or a prime) is a natural number greater than 1 that has
 console.log(test_prime(47));
 
 */
+
+/*
+09. Generate Identity Matrix:
+    Write a JavaScript function whichh returns the n rows by n columns identity matrix.
+    function matrix(n){
+        
+    let i;
+    let j;
+    
+    for (let i = 0; i < n; i++){
+        
+        for(let j = 0; j < n; j++){
+
+            if(i === j){
+                
+                console.log('1');
+            } else {
+                console.log('0')
+            }
+        }
+
+        console.log('---------------------');
+        
+    }
+}
+
+console.log(matrix(4));
+
+*/
